@@ -1,15 +1,17 @@
 import express from "express";
 import auth from "../middleware/auth.js";
-import Chat from "../models/chat.model.js";
+import Chat from "../models/chat-model.js";
 import Reminder from "../models/reminder-model.js";
 import OpenAI from "openai";
-import chrono from "chrono-node";
+import * as chrono from "chrono-node";
 
 const router = express.Router();
-const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
 router.post("/send", auth, async (req, res) => {
   try {
+    // ✅ Initialize OpenAI client inside the route
+    const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+
     const { message } = req.body;
     if (!message) return res.status(400).json({ message: "Message is required" });
 
@@ -19,7 +21,7 @@ router.post("/send", auth, async (req, res) => {
       const userChat = await Chat.create({
         userId: req.user,
         message,
-        response: cached.response
+        response: cached.response,
       });
       return res.json(userChat);
     }
@@ -35,8 +37,8 @@ router.post("/send", auth, async (req, res) => {
         const reminder = await Reminder.create({
           userId: req.user,
           medication,
-          time: parsedDate, 
-          note: ""
+          time: parsedDate,
+          note: "",
         });
 
         reminderAddedText = `\n\n✅ Reminder added: ${medication} at ${parsedDate.toLocaleString()}`;
@@ -58,8 +60,8 @@ router.post("/send", auth, async (req, res) => {
 
     // OpenAI call
     const completion = await openai.chat.completions.create({
-      model: "gpt-5.1",
-      messages: [{ role: "user", content: prompt }]
+      model: "gpt-4o-mini", // ✅ safer model name
+      messages: [{ role: "user", content: prompt }],
     });
 
     const responseText = completion.choices[0].message.content;
@@ -68,7 +70,7 @@ router.post("/send", auth, async (req, res) => {
     const chat = await Chat.create({
       userId: req.user,
       message,
-      response: responseText
+      response: responseText,
     });
 
     res.json(chat);

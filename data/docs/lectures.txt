@@ -1,0 +1,49 @@
+Lecture: Medication Adherence and Why It Matters
+
+- Definition:
+  Medication adherence refers to whether patients take their medicines as prescribed — not missing doses, stopping early, or taking incorrect amounts.
+
+- Why It’s Important:
+  1. Better disease control.  
+  2. Reduces the risk of hospitalization.  
+  3. Lowers healthcare costs in the long run.
+
+- Strategies to Improve Adherence:
+  - Use reminders (digital tools, apps).  
+  - Link medication time with daily routines (e.g., after brushing teeth).  
+  - Educate patients about their illness and how the drug works.  
+  - Use pill boxes or packaging that organizes daily doses.
+
+- Challenges:
+  - Forgetfulness  
+  - Side effects  
+  - Cost of medication  
+  - Lack of understanding
+
+- The Role of Technology:
+  Tools like ThummimAI can help by reminding users, tracking logs, and giving motivational messages.
+
+
+
+  Lecture: Understanding Vitamin D.
+
+- What is Vitamin D?
+  Vitamin D is a fat‑soluble vitamin that helps regulate calcium and phosphate in the body.
+
+- Why is it important?
+  It supports bone health, immune function, and has roles in reducing inflammation.
+
+- Sources:
+  1. Sunlight – UVB triggers vitamin D production on your skin.
+  2. Food – Fatty fish, fortified milk, and eggs.
+  3. Supplements – Often used when dietary intake or sunlight exposure is low.
+
+- Recommended Daily Dose:
+  Adults: 600 – 800 IU (depending on age and health status)
+  
+- Interactions:
+  Can interact with medications like corticosteroids and weight-loss drugs.
+
+- Tips:
+  - Take with food for better absorption.
+  - Monitor with blood tests if used long-term.

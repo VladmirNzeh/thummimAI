@@ -1,0 +1,11 @@
+Q: What is ThummimAI?
+A: ThummimAI is a learning and medication assistance platform that helps users schedule their medication reminders, ask questions, and get personalized help.
+
+Q: How do I add a medication reminder?
+A: You can tell the AI “Remind me to take [medication] at [time]” and it will set it up for you automatically.
+
+Q: Can ThummimAI replace a doctor?
+A: No. ThummimAI is not a substitute for professional medical advice. Always consult your doctor for diagnosis, prescription, and medical decisions.
+
+Q: Is my data safe?
+A: Yes. All your reminders and conversation logs are stored securely. We follow standard encryption and data protection practices.
